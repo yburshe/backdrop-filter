@@ -59,6 +59,7 @@ blobpicker.addEventListener("input", function () {
 });
 
 glasscolor = "#5143a3";
+a = 98;
 
 transparency.addEventListener("input", function () {
   var transparencyValue = transparency.value;
