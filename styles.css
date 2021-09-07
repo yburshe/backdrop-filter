@@ -17,6 +17,23 @@ body {
   backdrop-filter: blur(100px);
 }
 
+.firefox svg {
+  vertical-align: middle;
+}
+
+.firefox--click {
+  cursor: pointer;
+}
+
+.firefox--click svg,
+.firefox--click h3 {
+  display: inline;
+}
+
+#dropdown-content {
+  display: none;
+}
+
 .madeby {
   color: black;
 }
