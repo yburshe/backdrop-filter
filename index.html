@@ -11,7 +11,12 @@
   <body id="bodyElement">
     <div id="glass"></div>
     <div id="blob"></div>
-    <div class="main" onmouseenter="showCursor()" onmouseleave="rehideCursor()">
+    <div
+      id="main"
+      class="main"
+      onmouseenter="showCursor()"
+      onmouseleave="rehideCursor()"
+    >
       <p class="madeby">
         Made by Yash Burshe
         <a target="_blank" href="https://github.com/sunbect">(@sunbect)</a>
@@ -49,6 +54,54 @@
           id="hideCursor"
           onclick="hideCursorFunction()"
         />
+      </div>
+      <div class="firefox">
+        <div id="dropdownClick" class="firefox--click" onclick="dropdown()">
+          <h3>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="feather feather-info"
+            >
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+            Not working on Firefox?
+          </h3>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="feather feather-chevron-down"
+          >
+            <polyline points="6 9 12 15 18 9"></polyline>
+          </svg>
+        </div>
+
+        <div class="dropdown-content" id="dropdown-content">
+          <mark
+            >The css property, <code>backdrop-filter</code> is not currently
+            supported in Firefox</mark
+          ><br />
+          From version 70: this feature is behind
+          thelayout.css.backdrop-filter.enabled preferences (needs to be set to
+          true) and the gfx.webrender.all preferences (needs to be set to true).
+          To change preferences in Firefox, visit about:config.
+        </div>
       </div>
     </div>
   </body>
