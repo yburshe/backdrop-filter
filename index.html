@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body id="bodyElement">
+    <div id="glass"></div>
+    <div id="blob"></div>
+    <div class="main" onmouseenter="showCursor()" onmouseleave="rehideCursor()">
+      <p class="madeby">
+        Made by Yash Burshe
+        <a target="_blank" href="https://github.com/sunbect">(@sunbect)</a>
+      </p>
+      <h1>BUG: Blob Under Glass</h1>
+      <div class="blobDiv">
+        <label for="blobpicker">Color of Blob</label> <br />
+        <input name="blobpicker" type="color" id="blobpicker" value="#d15454" />
+      </div>
+      <div class="glassDiv">
+        <label for="glasspicker">Color of Glass</label>
+        <br />
+        <input
+          name="glasspicker"
+          type="color"
+          id="glasspicker"
+          value="#5143a3"
+        />
+      </div>
+      <div class="transparencyDiv">
+        <label for="transparency">Opacity of Glass</label><br />
+        <input name="transparency" type="range" id="transparency" />
+        <div id="transparencyOutput">50%</div>
+      </div>
+      <div class="blurDiv">
+        <label for="blur">Blur Radius of Glass</label><br />
+        <input name="blur" type="range" min="0" max="200" id="blur" />
+        <div id="blurOutput">100px</div>
+      </div>
+      <div class="hideCursor">
+        <label for="hidecursor">Hide Cursor</label>
+        <input
+          type="checkbox"
+          name="hidecursor"
+          id="hideCursor"
+          onclick="hideCursorFunction()"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
