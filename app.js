@@ -28,14 +28,18 @@ var hideCursor = document.getElementById("hideCursor");
 var glassBlur = document.getElementById("blur");
 var transparencyOutput = document.getElementById("transparencyOutput");
 var blurOutput = document.getElementById("blurOutput");
+var main = document.getElementById("main");
 
-function hideCursorFunction() {
-  if (hideCursor.checked) {
-    bodyEl.style.cursor = "none";
-  } else {
-    bodyEl.style.cursor = "unset";
-  }
-}
+// function hideCursorFunction() {
+// if (hideCursor.checked) {
+//   bodyEl.style.cursor = "none";
+// } else {
+//   bodyEl.style.cursor = "unset";
+// }
+// main.onmouseleave(){
+//   bodyEl.style.cursor = "none";
+// }
+// }
 
 function showCursor() {
   bodyEl.style.cursor = "unset";
@@ -85,3 +89,15 @@ glasspicker.addEventListener("input", function () {
     glass.style.backgroundColor = glasscolor + a;
   });
 });
+
+var dropdownContent = document.getElementById("dropdown-content");
+
+function dropdown() {
+  console.log(window.getComputedStyle(dropdownContent, null).display);
+
+  if (window.getComputedStyle(dropdownContent, null).display == "none") {
+    dropdownContent.style.display = "block";
+  } else {
+    dropdownContent.style.display = "none";
+  }
+}
