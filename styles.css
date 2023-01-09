@@ -17,6 +17,19 @@ body {
   backdrop-filter: blur(100px);
 }
 
+.webkit, .firefox{
+  display: flex;
+  gap: 1rem;
+}
+
+.webkit{
+  align-items: center;
+}
+
+.firefox{
+  flex-direction: column;
+}
+
 .firefox svg {
   vertical-align: middle;
 }
